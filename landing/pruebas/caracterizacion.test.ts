@@ -67,7 +67,7 @@ const HOY: Record<string, Pagina> = {
       ...CABECERA,
       // Arreglado a propósito (antes, "/libro …", sin camino base).
       "/editorial-web/libro/ Conoce el primer libro",
-      "/editorial-web/libro/ Leer el primer cuento",
+      "/editorial-web/libro/cuento/ Leer el primer cuento",
       "/editorial-web/sofia/ Más sobre Sofía",
     ],
     alts: [
