@@ -21,8 +21,6 @@ jobs:
   revision-claude:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-    env:
-      REVISION_DIR: ${{ runner.temp }}/revision
     steps:
       - uses: actions/checkout@v6
         with:
@@ -36,6 +34,9 @@ jobs:
         run: |
           npm ci
           npm install -g @anthropic-ai/claude-code@2.1.300
+
+      - name: Preparar carpeta temporal
+        run: echo "REVISION_DIR=$RUNNER_TEMP/revision" >> "$GITHUB_ENV"
 
       - name: Diff del PR
         id: diff
