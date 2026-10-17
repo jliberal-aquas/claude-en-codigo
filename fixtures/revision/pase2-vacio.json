@@ -1,0 +1,10 @@
+{
+  "_sintetico": true,
+  "type": "result",
+  "result": "No hay hallazgos que confirmar.",
+  "session_id": "sintetico-revision",
+  "total_cost_usd": 0.08,
+  "structured_output": {
+    "confirmaciones": []
+  }
+}

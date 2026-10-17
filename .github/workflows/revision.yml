@@ -1,0 +1,88 @@
+# Revisión de cada PR con Claude Code sin interfaz (claude -p), en dos
+# pases independientes: el primero busca, el segundo intenta refutar
+# lo que encontró. Ninguno decide el color del job: lo decide
+# herramientas/revision.ts. El job `revision-claude` es un check
+# requerido en la regla de protección de main.
+name: revision
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: revision-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  revision-claude:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      REVISION_DIR: ${{ runner.temp }}/revision
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+
+      - name: Instalar dependencias y Claude Code
+        run: |
+          npm ci
+          npm install -g @anthropic-ai/claude-code@2.1.300
+
+      - name: Diff del PR
+        id: diff
+        env:
+          # Por variable de entorno, nunca ${{ }} dentro de run:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          mkdir -p "$REVISION_DIR"
+          git diff "$BASE_SHA...HEAD" > "$REVISION_DIR/diff.txt"
+
+      - name: Primer pase (busca)
+        id: pase1
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          claude -p "$(cat .github/revision/primer-pase.md)" \
+            --bare --model sonnet --effort medium \
+            --output-format json \
+            --json-schema "$(npm run --silent revision -- \
+              esquema hallazgos)" \
+            --tools "Read,Grep,Glob" \
+            --permission-mode dontAsk \
+            --max-turns 8 \
+            --no-session-persistence \
+            < "$REVISION_DIR/diff.txt" > "$REVISION_DIR/pase1.json"
+
+      - name: Segundo pase (intenta refutar)
+        id: pase2
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          npm run --silent revision -- segundo-pase \
+            "$REVISION_DIR/diff.txt" "$REVISION_DIR/pase1.json" \
+            > "$REVISION_DIR/entrada2.txt"
+          claude -p "$(cat .github/revision/segundo-pase.md)" \
+            --bare --model sonnet --effort medium \
+            --output-format json \
+            --json-schema "$(npm run --silent revision -- \
+              esquema confirmaciones)" \
+            --tools "Read,Grep,Glob" \
+            --permission-mode dontAsk \
+            --max-turns 8 \
+            --no-session-persistence \
+            < "$REVISION_DIR/entrada2.txt" > "$REVISION_DIR/pase2.json"
+
+      - name: Veredicto
+        id: veredicto
+        run: |
+          npm run --silent revision -- veredicto \
+            "$REVISION_DIR/pase1.json" "$REVISION_DIR/pase2.json"

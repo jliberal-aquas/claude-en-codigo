@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/node_modules/.bin/tsx",
+            "args": [
+              "${CLAUDE_PLUGIN_ROOT}/scripts/hooks/validar-ficha.ts"
+            ],
+            "statusMessage": "Revisando la ficha"
+          }
+        ]
+      }
+    ]
+  }
+}

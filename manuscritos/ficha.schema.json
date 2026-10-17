@@ -1,0 +1,56 @@
+{
+  "title": "Ficha de manuscrito de Ediciones del Patio",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "titulo",
+    "firma",
+    "genero",
+    "genero_detalle",
+    "resumen",
+    "premios",
+    "editorial_previa",
+    "notas_del_autor",
+    "confianza"
+  ],
+  "properties": {
+    "titulo": { "type": "string" },
+    "firma": { "type": ["string", "null"] },
+    "genero": {
+      "type": "string",
+      "enum": [
+        "realismo",
+        "policial",
+        "fantasía urbana",
+        "ciencia ficción",
+        "romance",
+        "otro"
+      ]
+    },
+    "genero_detalle": { "type": ["string", "null"] },
+    "resumen": { "type": "string" },
+    "premios": {
+      "anyOf": [{ "$ref": "#/$defs/dato" }, { "type": "null" }]
+    },
+    "editorial_previa": {
+      "anyOf": [{ "$ref": "#/$defs/dato" }, { "type": "null" }]
+    },
+    "notas_del_autor": { "type": ["string", "null"] },
+    "confianza": {
+      "type": "string",
+      "enum": ["alta", "media", "baja"]
+    }
+  },
+  "$defs": {
+    "dato": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["texto", "anio", "cita"],
+      "properties": {
+        "texto": { "type": "string" },
+        "anio": { "type": ["integer", "null"] },
+        "cita": { "type": "string" }
+      }
+    }
+  }
+}

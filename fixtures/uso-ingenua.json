@@ -1,0 +1,48 @@
+{
+  "_sintetico": true,
+  "descripcion": "Tres peticiones con la hora al principio de la instrucción.",
+  "modelo": "claude-opus-5-5",
+  "vida": "5m",
+  "lote": false,
+  "peticiones": [
+    {
+      "enviada": "2026-10-16T10:02:11Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 633,
+        "cache_creation_input_tokens": 1120,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 988,
+        "output_tokens_details": {
+          "thinking_tokens": 880
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-16T10:02:52Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 1473,
+        "cache_creation_input_tokens": 1120,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1127,
+        "output_tokens_details": {
+          "thinking_tokens": 1010
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-16T10:03:30Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 993,
+        "cache_creation_input_tokens": 1120,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1052,
+        "output_tokens_details": {
+          "thinking_tokens": 940
+        }
+      }
+    }
+  ]
+}

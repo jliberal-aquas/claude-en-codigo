@@ -1,0 +1,16 @@
+{
+  "_sintetico": true,
+  "type": "result",
+  "result": "El primero no se sostiene.",
+  "session_id": "sintetico-revision",
+  "total_cost_usd": 0.08,
+  "structured_output": {
+    "confirmaciones": [
+      {
+        "indice": 0,
+        "confirmado": false,
+        "motivo": "src/pages/libro/cuento.astro existe"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "_sintetico": true,
+  "session_id": "ses-sintetica-018",
+  "transcript_path": ".claude/hooks/eventos/conversacion.jsonl",
+  "cwd": ".",
+  "hook_event_name": "PreCompact",
+  "trigger": "manual",
+  "custom_instructions": "conserva las fichas pendientes"
+}

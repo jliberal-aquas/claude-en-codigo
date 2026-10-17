@@ -1,0 +1,14 @@
+{
+  "name": "umbral-editorial",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "0.135.0",
+    "@modelcontextprotocol/server": "2.3.1",
+    "tsx": "4.23.15",
+    "zod": "4.6.7"
+  }
+}

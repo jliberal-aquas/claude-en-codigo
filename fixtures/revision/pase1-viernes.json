@@ -1,0 +1,27 @@
+{
+  "_sintetico": true,
+  "type": "result",
+  "result": "Dos hallazgos críticos.",
+  "session_id": "sintetico-revision",
+  "total_cost_usd": 0.08,
+  "structured_output": {
+    "hallazgos": [
+      {
+        "archivo": "landing/src/pages/index.astro",
+        "linea": 27,
+        "severidad": "critica",
+        "regla": "enlace-interno",
+        "evidencia": "+        <Boton href={`${base}/libro/cuento/`}>Leer el primer cuento</Boton>",
+        "explicacion": "lleva a /libro/cuento/, y src/pages no tiene esa página"
+      },
+      {
+        "archivo": "landing/pruebas/caracterizacion.test.ts",
+        "linea": 70,
+        "severidad": "critica",
+        "regla": "prueba-ajustada",
+        "evidencia": "+      \"/editorial-web/libro/cuento/ Leer el primer cuento\",",
+        "explicacion": "la prueba cambia en el mismo diff que el enlace: ya no lo vigila"
+      }
+    ]
+  }
+}

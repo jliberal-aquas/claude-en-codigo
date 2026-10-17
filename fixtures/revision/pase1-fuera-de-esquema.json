@@ -1,0 +1,18 @@
+{
+  "_sintetico": true,
+  "type": "result",
+  "result": "Un hallazgo.",
+  "session_id": "sintetico-revision",
+  "total_cost_usd": 0.08,
+  "structured_output": {
+    "hallazgos": [
+      {
+        "archivo": "landing/src/pages/index.astro",
+        "linea": 27,
+        "severidad": "alta",
+        "regla": "enlace-interno",
+        "explicacion": "el botón da 404"
+      }
+    ]
+  }
+}

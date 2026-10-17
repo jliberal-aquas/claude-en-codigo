@@ -1,0 +1,26 @@
+{
+  "_sintetico": true,
+  "model": "claude-opus-5-5",
+  "id": "msg_sintetico_009b",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "text",
+      "text": "<ficha>\nGénero: realismo\nHechos:\n- Clara hereda la balsa de su padre. «Clara, la menor, se quedó con La Paciente.»\n- En la isla viven 23 personas. «Veintitrés personas viven en Isla Menor»\n- La provincia ofrece comprar el cruce. «Dieciocho mil pesos por la concesión del cruce y el desmontaje del cable»\n- Hay que evacuar la isla en tres viajes. «23 personas, 8 por viaje, 3 viajes»\nAutora: no consta en el manuscrito.\n</ficha>"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "_request_id": "req_sintetico_009b"
+}

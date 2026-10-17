@@ -1,0 +1,26 @@
+{
+  "_sintetico": true,
+  "model": "claude-opus-5-5",
+  "id": "msg_sintetico_004c",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "text",
+      "text": "Mateo atiende un encargo extraño: copiar una llave gastada.\nUna etiqueta de su tío, de 1989, nombra a la misma mujer.\nLa mujer no vuelve y la copia abre una puerta sin número.\nEl texto no dice quién es ella ni qué hay adentro.\nGénero probable: realismo, con misterio abierto."
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 412,
+    "output_tokens": 89
+  },
+  "_request_id": "req_sintetico_004c"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "umbral-editorial",
+  "displayName": "Umbral editorial",
+  "version": "1.0.0",
+  "description": "Fichas de manuscritos con citas y su control",
+  "author": {
+    "name": "Ediciones del Patio"
+  },
+  "license": "MIT",
+  "keywords": ["editorial", "manuscritos", "fichas"]
+}

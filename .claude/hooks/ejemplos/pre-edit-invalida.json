@@ -1,0 +1,15 @@
+{
+  "session_id": "sesion-sintetica-17",
+  "transcript_path": "__RAIZ__/.transcripcion-sintetica.jsonl",
+  "cwd": "__RAIZ__",
+  "permission_mode": "acceptEdits",
+  "hook_event_name": "PreToolUse",
+  "tool_name": "Edit",
+  "tool_input": {
+    "file_path": "__RAIZ__/manuscritos/fichas/ms-009.json",
+    "old_string": "\"premios\": null,",
+    "new_string": "\"premios\": {\"texto\": \"Premio regional de cuento\", \"anio\": 2019},",
+    "replace_all": false
+  },
+  "tool_use_id": "toolu_sintetico_03"
+}

@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "catalogo": {
+      "type": "stdio",
+      "command": "${CLAUDE_PLUGIN_ROOT}/node_modules/.bin/tsx",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/paquetes/catalogo-mcp/src/main.ts"
+      ],
+      "env": {
+        "FICHAS_DIR": "${CLAUDE_PROJECT_DIR}/manuscritos/fichas"
+      }
+    }
+  }
+}

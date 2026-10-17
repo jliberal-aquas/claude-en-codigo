@@ -1,0 +1,21 @@
+{
+  "_sintetico": true,
+  "type": "result",
+  "result": "Los dos se sostienen.",
+  "session_id": "sintetico-revision",
+  "total_cost_usd": 0.08,
+  "structured_output": {
+    "confirmaciones": [
+      {
+        "indice": 0,
+        "confirmado": true,
+        "motivo": "no existe src/pages/libro/cuento"
+      },
+      {
+        "indice": 1,
+        "confirmado": true,
+        "motivo": "la expectativa sigue al código, no al sitio"
+      }
+    ]
+  }
+}

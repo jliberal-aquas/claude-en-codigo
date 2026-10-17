@@ -1,0 +1,7 @@
+---
+import { autora } from "../data/autora";
+---
+<section class="rounded-lg bg-white p-5" style="border-left:6px solid #9a3f1b;">
+  <h3 class="font-display text-xl" style="color:#2b2118">{autora.nombre}</h3>
+  {autora.bio.map((linea) => <p class="mt-2">{linea}</p>)}
+</section>

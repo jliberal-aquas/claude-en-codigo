@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2023",
+    "lib": ["es2023"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "types": ["node"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "verbatimModuleSyntax": true,
+    "skipLibCheck": true,
+    "noEmit": true
+  },
+  "include": [
+    "paquetes/**/*.ts",
+    "landing/pruebas/**/*.ts",
+    "herramientas/**/*.ts",
+    ".claude/hooks/**/*.ts",
+    "landing/e2e/**/*.ts",
+    "landing/playwright.config.ts"
+  ]
+}

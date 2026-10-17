@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "catalogo": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "tsx",
+        "paquetes/catalogo-mcp/src/main.ts"
+      ],
+      "env": {}
+    }
+  }
+}

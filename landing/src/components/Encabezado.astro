@@ -1,0 +1,20 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const enlaces = [
+  { href: `${base}/`, texto: "Inicio" },
+  { href: `${base}/libro/`, texto: "El libro" },
+  { href: `${base}/sofia/`, texto: "Sofía" },
+];
+---
+<header class="border-b border-stone-300 bg-stone-100">
+  <nav class="mx-auto flex max-w-4xl items-center justify-between p-4" style="font-family: Georgia, serif;">
+    <a href={`${base}/`} class="text-xl font-bold" style="color:#9a3f1b">Ediciones del Patio</a>
+    <ul class="flex gap-4">
+      {enlaces.map((e) => (
+        <li>
+          <a href={e.href} class="hover:underline" style="color:#3d2c1e">{e.texto}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>

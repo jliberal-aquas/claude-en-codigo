@@ -1,0 +1,56 @@
+{
+  "_sintetico": true,
+  "model": "claude-opus-5-5",
+  "id": "msg_sintetico_inv_coord_a",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "text",
+      "text": "Son tres preguntas independientes: las reparto."
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_sintetico_inv1",
+      "name": "Agent",
+      "input": {
+        "description": "Parecidos en el catálogo",
+        "subagent_type": "investigador",
+        "prompt": "Manuscrito: ms-006, «Estación Lenta», ciencia ficción. Pregunta: ¿qué otros manuscritos del catálogo se le parecen por género o tema? Mira las fichas de manuscritos/fichas/ (genero, genero_detalle y notas_del_autor). Devuelve el formato de vuelta."
+      }
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_sintetico_inv2",
+      "name": "Agent",
+      "input": {
+        "description": "Largo frente a los demás",
+        "subagent_type": "investigador",
+        "prompt": "Compara su largo con el de los demás manuscritos de la convocatoria y dime si es más largo o más corto."
+      }
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_sintetico_inv3",
+      "name": "Agent",
+      "input": {
+        "description": "Tema en la landing",
+        "subagent_type": "investigador",
+        "prompt": "Manuscrito: ms-006, «Estación Lenta»: una estación orbital y una inteligencia de mantenimiento. Pregunta: ¿la landing de la editorial ya presenta ese tema? Mira landing/src/ (páginas y datos). Devuelve el formato de vuelta."
+      }
+    }
+  ],
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 2100,
+    "output_tokens": 420
+  },
+  "_request_id": "req_sintetico_inv_coord_a"
+}

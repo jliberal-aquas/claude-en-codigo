@@ -1,0 +1,14 @@
+{
+  "name": "ediciones-del-patio",
+  "description": "Plugins de Ediciones del Patio",
+  "owner": {
+    "name": "Ediciones del Patio"
+  },
+  "plugins": [
+    {
+      "name": "umbral-editorial",
+      "source": "./plugins/umbral-editorial",
+      "description": "Fichas de manuscritos con citas y su control"
+    }
+  ]
+}

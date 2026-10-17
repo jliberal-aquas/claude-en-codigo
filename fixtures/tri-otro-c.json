@@ -1,0 +1,33 @@
+{
+  "_sintetico": true,
+  "model": "claude-opus-5-5",
+  "id": "msg_sintetico_tri_otro_c",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_sintetico_otro_3",
+      "name": "mcp__triage__escalar",
+      "input": {
+        "caso": "otro",
+        "criterio": "genero_otro",
+        "evidencia": "ficha validada con género otro",
+        "recomendacion": "Leerlo y decidir si la convocatoria lo admite: las bases no dicen qué hacer con «otro»."
+      }
+    }
+  ],
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 2460,
+    "output_tokens": 70
+  },
+  "_request_id": "req_sintetico_tri_otro_c"
+}

@@ -1,0 +1,26 @@
+{
+  "_sintetico": true,
+  "model": "claude-opus-5-5",
+  "id": "msg_sintetico_009c",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "text",
+      "text": "<ficha>\nGénero: realismo\nHechos:\n- Clara tiene treinta y siete años. «Tenía treinta y siete años, Clara»\n- Telmo Pardo trabaja para el ministerio. «Telmo Pardo, agrimensor, del ministerio de obras»\n- El puente tiene un costo previsto. «Costaría ciento ochenta millones.»\n- Año de nacimiento de la autora: no consta en el manuscrito.\nAutora: no consta en el manuscrito.\n</ficha>"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "_request_id": "req_sintetico_009c"
+}

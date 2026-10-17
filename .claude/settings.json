@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "model": "claude-sonnet-5-5",
+  "env": {
+    "CLAUDE_CODE_DISABLE_FAST_MODE": "1"
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "npx tsx herramientas/linea-de-estado.ts"
+  },
+  "permissions": {
+    "allow": [
+      "Edit(./landing/src/**)",
+      "Bash(npm --prefix landing run build)",
+      "Bash(npm --prefix landing test)",
+      "Bash(npm run permisos)"
+    ],
+    "ask": [
+      "Bash(rm *)",
+      "Bash(git push *)"
+    ],
+    "deny": [
+      "Read(.env)",
+      "Read(.env.*)",
+      "Edit(./heredado/**)",
+      "Edit(./.git/**)",
+      "Edit(./.claude/**)",
+      "Bash(curl *)",
+      "Bash(wget *)"
+    ],
+    "disableBypassPermissionsMode": "disable"
+  },
+  "sandbox": {
+    "enabled": true,
+    "filesystem": {
+      "denyRead": ["~/"],
+      "allowRead": ["."]
+    }
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx",
+            "args": [
+              "tsx",
+              "${CLAUDE_PROJECT_DIR}/.claude/hooks/validar-ficha.ts"
+            ],
+            "statusMessage": "Revisando la ficha"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx",
+            "args": [
+              "tsx",
+              "${CLAUDE_PROJECT_DIR}/.claude/hooks/registrar-herramienta.ts"
+            ]
+          }
+        ]
+      }
+    ],
+    "PermissionRequest": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx",
+            "args": [
+              "tsx",
+              "${CLAUDE_PROJECT_DIR}/.claude/hooks/permiso-landing.ts"
+            ],
+            "timeout": 30,
+            "onFailure": "block"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx",
+            "args": [
+              "tsx",
+              "${CLAUDE_PROJECT_DIR}/.claude/hooks/compactacion.ts"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx",
+            "args": [
+              "tsx",
+              "${CLAUDE_PROJECT_DIR}/.claude/hooks/compactacion.ts"
+            ],
+            "timeout": 30
+          }
+        ]
+      }
+    ]
+  }
+}

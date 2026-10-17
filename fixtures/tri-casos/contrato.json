@@ -1,0 +1,21 @@
+{
+  "_sintetico": true,
+  "id": "contrato",
+  "manuscrito": "ms-004",
+  "autor": "Rosa Cienfuegos",
+  "recibido": "2026-08-05",
+  "mensaje": "Si aceptan mi cuento, necesito que el contrato me deje los derechos audiovisuales. ¿Pueden cambiar esa cláusula antes de que lo lean?",
+  "ficha": {
+    "id": "ms-004",
+    "titulo": "La llave sobrante",
+    "firma": "Rosa Cienfuegos",
+    "genero": "fantasía urbana",
+    "genero_detalle": null,
+    "resumen": "Un cerrajero copia una llave que abre una puerta sin número en la calle Estrecha.",
+    "premios": null,
+    "editorial_previa": null,
+    "notas_del_autor": null,
+    "confianza": "media"
+  },
+  "esperado": "escalar"
+}

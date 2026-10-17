@@ -1,0 +1,22 @@
+{
+  "_sintetico": true,
+  "model": "claude-opus-5-5",
+  "id": "msg_sintetico_bucle_niega_b",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    }
+  ],
+  "stop_reason": "refusal",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 1641,
+    "output_tokens": 12
+  },
+  "_request_id": "req_sintetico_bucle_niega_b"
+}

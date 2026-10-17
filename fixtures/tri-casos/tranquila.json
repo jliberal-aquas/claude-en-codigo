@@ -1,0 +1,21 @@
+{
+  "_sintetico": true,
+  "id": "tranquila",
+  "manuscrito": "ms-005",
+  "autor": "Candelaria Montoya",
+  "recibido": "2026-08-02",
+  "mensaje": "Buenas tardes. Les escribo sin apuro. Antes de seguir, ¿podría conversar con la fundadora por teléfono? Prefiero tratar esto con una persona.",
+  "ficha": {
+    "id": "ms-005",
+    "titulo": "Dos tazas",
+    "firma": "Candelaria Montoya",
+    "genero": "romance",
+    "genero_detalle": null,
+    "resumen": "Olivia y Gonzalo se conocen en una cafetería por una regla de tazas y vasos.",
+    "premios": null,
+    "editorial_previa": null,
+    "notas_del_autor": null,
+    "confianza": "alta"
+  },
+  "esperado": "escalar"
+}

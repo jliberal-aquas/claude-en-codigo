@@ -1,0 +1,26 @@
+{
+  "_sintetico": true,
+  "model": "claude-sonnet-5-5",
+  "id": "msg_sintetico_inv_largo_libre_b",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "text",
+      "text": "Estación Lenta es bastante más corta que el promedio de la convocatoria, que ronda las 1.300 palabras."
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 2100,
+    "output_tokens": 40
+  },
+  "_request_id": "req_sintetico_inv_largo_libre_b"
+}

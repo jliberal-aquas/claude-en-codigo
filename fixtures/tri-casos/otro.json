@@ -1,0 +1,21 @@
+{
+  "_sintetico": true,
+  "id": "otro",
+  "manuscrito": "ms-008",
+  "autor": "Renata Villasante",
+  "recibido": "2026-07-28",
+  "mensaje": "Les mando «El eco del cuarto piso». No sé bien qué género es; ustedes dirán.",
+  "ficha": {
+    "id": "ms-008",
+    "titulo": "El eco del cuarto piso",
+    "firma": "Renata Villasante",
+    "genero": "otro",
+    "genero_detalle": "terror",
+    "resumen": "El eco de una escalera responde con otra voz y sube hasta la puerta de Mauro.",
+    "premios": null,
+    "editorial_previa": null,
+    "notas_del_autor": null,
+    "confianza": "alta"
+  },
+  "esperado": "escalar"
+}

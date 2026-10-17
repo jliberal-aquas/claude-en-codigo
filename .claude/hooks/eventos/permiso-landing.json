@@ -1,0 +1,14 @@
+{
+  "_sintetico": true,
+  "session_id": "ses-sintetica-018",
+  "transcript_path": "/repo/.claude/transcripcion.jsonl",
+  "cwd": "/repo",
+  "permission_mode": "default",
+  "hook_event_name": "PermissionRequest",
+  "tool_name": "Edit",
+  "tool_input": {
+    "file_path": "/repo/landing/astro.config.mjs",
+    "old_string": "base: \"/editorial-web\",",
+    "new_string": "base: \"/\","
+  }
+}

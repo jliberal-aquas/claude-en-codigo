@@ -1,0 +1,21 @@
+{
+  "_sintetico": true,
+  "id": "enojado",
+  "manuscrito": "ms-002",
+  "autor": "Casilda Brea",
+  "recibido": "2026-08-10",
+  "mensaje": "Mandé mi cuento en agosto y NADIE me contestó. ¿Así tratan a quienes escriben? Es una falta de respeto total. Quiero saber de una vez si lo van a leer o no.",
+  "ficha": {
+    "id": "ms-002",
+    "titulo": "La coartada de las nueve",
+    "firma": "Casilda Brea",
+    "genero": "policial",
+    "genero_detalle": null,
+    "resumen": "El inspector Ruiz Pantoja descubre que cuarenta relojes detenidos son una coartada fabricada.",
+    "premios": null,
+    "editorial_previa": null,
+    "notas_del_autor": null,
+    "confianza": "alta"
+  },
+  "esperado": "aceptar"
+}

@@ -1,0 +1,26 @@
+{
+  "_sintetico": true,
+  "model": "claude-sonnet-5-5",
+  "id": "msg_sintetico_inv_largo_b",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "text",
+      "text": "Listo.\n\n```json\n{\n  \"estado\": \"ok\",\n  \"hallazgos\": [\n    {\n      \"afirmacion\": \"ms-006 tiene 400 palabras.\",\n      \"fuente\": {\n        \"ruta\": \"manuscritos/entrada/ms-006.md\",\n        \"metodo\": \"contar_palabras\",\n        \"valor\": 400\n      }\n    },\n    {\n      \"afirmacion\": \"La mediana de los otros nueve es 384 palabras: ms-006 queda en el medio del grupo.\",\n      \"fuente\": {\n        \"ruta\": \"manuscritos/entrada\",\n        \"metodo\": \"contar_palabras de los diez; mediana sin ms-006\"\n      }\n    },\n    {\n      \"afirmacion\": \"El promedio de los otros nueve, 1.302, no representa al grupo: ms-009 solo tiene 8.957 palabras.\",\n      \"fuente\": {\n        \"ruta\": \"manuscritos/entrada/ms-009.md\",\n        \"metodo\": \"contar_palabras\",\n        \"valor\": 8957\n      }\n    }\n  ]\n}\n```"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 2100,
+    "output_tokens": 260
+  },
+  "_request_id": "req_sintetico_inv_largo_b"
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Puerta azul">
+  <rect width="32" height="32" rx="4" fill="#fbf6ee"/>
+  <rect x="9" y="5" width="14" height="23" rx="7" ry="7" fill="#2f5d8a"/>
+  <circle cx="19.5" cy="17" r="1.4" fill="#fbf6ee"/>
+</svg>

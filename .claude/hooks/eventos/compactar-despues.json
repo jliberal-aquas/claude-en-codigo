@@ -1,0 +1,9 @@
+{
+  "_sintetico": true,
+  "session_id": "ses-sintetica-018",
+  "transcript_path": ".claude/hooks/eventos/conversacion.jsonl",
+  "cwd": ".",
+  "hook_event_name": "PostCompact",
+  "trigger": "manual",
+  "compact_summary": "Resumen sintético: se ficharon ms-001 a ms-004; queda ms-005."
+}

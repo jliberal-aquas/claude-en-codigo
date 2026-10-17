@@ -1,0 +1,16 @@
+---
+import Base from "../layouts/Base.astro";
+import Encabezado from "../components/Encabezado.astro";
+import Pie from "../components/Pie.astro";
+import Boton from "../components/Boton.astro";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+<Base titulo="Página no encontrada">
+  <Encabezado />
+  <main class="mx-auto w-full max-w-4xl flex-1 space-y-4 px-4 py-8">
+    <h1 class="font-display text-3xl">No encontramos esa página</h1>
+    <p>Puede que la dirección esté mal escrita.</p>
+    <Boton href={`${base}/`}>Ir al inicio</Boton>
+  </main>
+  <Pie />
+</Base>

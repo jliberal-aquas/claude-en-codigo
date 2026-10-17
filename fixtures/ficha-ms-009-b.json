@@ -1,0 +1,26 @@
+{
+  "_sintetico": true,
+  "model": "claude-opus-5-5",
+  "id": "msg_sintetico_ficha-ms-009-b",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "text",
+      "text": "{\"titulo\":\"La Paciente\",\"firma\":\"Eulalia Mendiburu\",\"genero\":\"realismo\",\"genero_detalle\":null,\"resumen\":\"Clara hereda la balsa La Paciente y, en una crecida del río Tolmo, evacúa la isla.\",\"premios\":null,\"editorial_previa\":null,\"notas_del_autor\":null,\"confianza\":\"alta\"}"
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 0,
+    "output_tokens": 0
+  },
+  "_request_id": "req_sintetico_ficha-ms-009-b"
+}

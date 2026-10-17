@@ -1,0 +1,139 @@
+{
+  "_sintetico": true,
+  "descripcion": "Prueba de la fundadora: diez manuscritos, uno a uno.",
+  "modelo": "claude-opus-5-5",
+  "vida": "5m",
+  "lote": false,
+  "peticiones": [
+    {
+      "enviada": "2026-10-15T16:10:00Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 1210,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1132,
+        "output_tokens_details": {
+          "thinking_tokens": 1020
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-15T16:13:00Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 2450,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1478,
+        "output_tokens_details": {
+          "thinking_tokens": 1380
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-15T16:16:00Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 3980,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1835,
+        "output_tokens_details": {
+          "thinking_tokens": 1710
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-15T16:19:00Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 1520,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1244,
+        "output_tokens_details": {
+          "thinking_tokens": 1140
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-15T16:22:00Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 2890,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1608,
+        "output_tokens_details": {
+          "thinking_tokens": 1490
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-15T16:25:00Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 760,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 956,
+        "output_tokens_details": {
+          "thinking_tokens": 860
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-15T16:28:00Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 5120,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 2181,
+        "output_tokens_details": {
+          "thinking_tokens": 2050
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-15T16:31:00Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 2210,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1339,
+        "output_tokens_details": {
+          "thinking_tokens": 1230
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-15T16:34:00Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 3340,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1701,
+        "output_tokens_details": {
+          "thinking_tokens": 1580
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-15T16:37:00Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 1870,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 1272,
+        "output_tokens_details": {
+          "thinking_tokens": 1170
+        }
+      }
+    }
+  ]
+}

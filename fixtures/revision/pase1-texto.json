@@ -1,0 +1,7 @@
+{
+  "_sintetico": true,
+  "type": "result",
+  "result": "Revisé el diff. Hay un problema crítico: el botón «Leer el primer cuento» lleva a /editorial-web/libro/cuento/, que no existe.",
+  "session_id": "sintetico-revision",
+  "total_cost_usd": 0.08
+}

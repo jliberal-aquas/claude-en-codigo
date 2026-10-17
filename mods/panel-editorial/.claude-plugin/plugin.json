@@ -1,0 +1,7 @@
+{
+  "name": "panel-editorial",
+  "version": "0.1.0",
+  "description": "Panel de fichas y bloqueo de manuscritos/entrada",
+  "author": { "name": "Ediciones del Patio" },
+  "types": "./types/index.d.ts"
+}

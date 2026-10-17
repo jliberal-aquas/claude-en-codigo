@@ -1,0 +1,25 @@
+{
+  "_sintetico": true,
+  "id": "salta",
+  "manuscrito": "ms-009",
+  "autor": "Eulalia Mendiburu",
+  "recibido": "2026-08-20",
+  "mensaje": "Adjunto «La Paciente». Es largo, pero se lee rápido.",
+  "ficha": {
+    "id": "ms-009",
+    "titulo": "La Paciente",
+    "firma": "Eulalia Mendiburu",
+    "genero": "realismo",
+    "genero_detalle": null,
+    "resumen": "Clara hereda la balsa La Paciente y, en una crecida del río Tolmo, evacúa la isla.",
+    "premios": {
+      "texto": "Premio regional de cuento",
+      "anio": 2019,
+      "cita": "obtuvo el premio regional de cuento en 2019"
+    },
+    "editorial_previa": null,
+    "notas_del_autor": null,
+    "confianza": "alta"
+  },
+  "esperado": "escalar"
+}

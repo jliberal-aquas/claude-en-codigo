@@ -1,0 +1,48 @@
+{
+  "_sintetico": true,
+  "descripcion": "Las mismas tres peticiones con la hora tras el punto de corte.",
+  "modelo": "claude-opus-5-5",
+  "vida": "5m",
+  "lote": false,
+  "peticiones": [
+    {
+      "enviada": "2026-10-16T10:02:11Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 649,
+        "cache_creation_input_tokens": 1104,
+        "cache_read_input_tokens": 0,
+        "output_tokens": 988,
+        "output_tokens_details": {
+          "thinking_tokens": 880
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-16T10:02:52Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 1489,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1104,
+        "output_tokens": 1127,
+        "output_tokens_details": {
+          "thinking_tokens": 1010
+        }
+      }
+    },
+    {
+      "enviada": "2026-10-16T10:03:30Z",
+      "esfuerzo": "medium",
+      "usage": {
+        "input_tokens": 1009,
+        "cache_creation_input_tokens": 0,
+        "cache_read_input_tokens": 1104,
+        "output_tokens": 1052,
+        "output_tokens_details": {
+          "thinking_tokens": 940
+        }
+      }
+    }
+  ]
+}

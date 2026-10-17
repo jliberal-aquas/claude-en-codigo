@@ -1,0 +1,65 @@
+# Compuertas deterministas de cada cambio: tipos, pruebas de la raíz
+# y verificadores de la configuración de Claude Code, build y pruebas
+# de la landing. El job `compuertas` es un check requerido en
+# la regla de protección de main: su nombre no se repite en otro
+# workflow y no lleva `if:` (un job saltado cuenta como éxito).
+name: ci
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  compuertas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version: lts/*
+
+      - name: Instalar dependencias
+        run: |
+          npm ci
+          npm ci --prefix landing
+
+      - name: Tipos
+        run: npm run tipos
+
+      # `npm test` de la raíz: pruebas de los paquetes y del parser de
+      # hallazgos, y después capas, ajustes, permisos, skills, agentes,
+      # plugin y workflows. Un solo paso: el primero que falla, lo para.
+      - name: Pruebas de la raíz y verificadores
+        run: npm test
+
+      - name: Build de la landing
+        run: npm run build --prefix landing
+
+      - name: Pruebas de la landing (capítulo 7)
+        run: npm test --prefix landing
+
+      - name: Navegador para las pruebas de punta a punta
+        run: |
+          cd landing
+          npx playwright install --with-deps chromium
+
+      - name: Pruebas de punta a punta
+        run: npm run test:e2e --prefix landing
+
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: landing/playwright-report/
+          retention-days: 30

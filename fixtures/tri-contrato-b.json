@@ -1,0 +1,33 @@
+{
+  "_sintetico": true,
+  "model": "claude-opus-5-5",
+  "id": "msg_sintetico_tri_contrato_b",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_sintetico_contrato_2",
+      "name": "mcp__triage__escalar",
+      "input": {
+        "caso": "contrato",
+        "criterio": "fuera_de_alcance",
+        "evidencia": "¿Pueden cambiar esa cláusula antes de que lo lean?",
+        "recomendacion": "Responderle sobre la cláusula: el triage no decide contratos ni puede prometer nada sobre derechos."
+      }
+    }
+  ],
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 2280,
+    "output_tokens": 70
+  },
+  "_request_id": "req_sintetico_tri_contrato_b"
+}

@@ -1,0 +1,61 @@
+---
+import Base from "../layouts/Base.astro";
+import Encabezado from "../components/Encabezado.astro";
+import Pie from "../components/Pie.astro";
+import Titulo from "../components/Titulo.astro";
+import Boton from "../components/Boton.astro";
+import ResumenLibro from "../components/ResumenLibro.astro";
+import BloqueAutora from "../components/BloqueAutora.astro";
+import Aviso from "../components/Aviso.astro";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const secciones = ["Cuentos", "Cómics", "Recetas"];
+---
+<Base titulo="Ediciones del Patio">
+  <Encabezado />
+  <main class="mx-auto w-full max-w-4xl flex-1 space-y-10 px-4 py-8">
+    <section class="grid items-center gap-6 md:grid-cols-2">
+      <div class="space-y-4">
+        <h1 class="font-display text-4xl" style="color:#2b2118">Ediciones del Patio</h1>
+        <p class="text-lg">
+          Una editorial pequeña que publica cuentos, cómics y recetas para quien llega por primera vez a la lectura.
+        </p>
+        <p>
+          <a href={`${base}/libro/`} class="underline" style="color:#9a3f1b"
+            >Conoce el primer libro</a
+          >
+        </p>
+        <Boton href={`${base}/libro/`}>Leer el primer cuento</Boton>
+      </div>
+      <img
+        src={`${base}/portada-la-puerta-azul.svg`}
+        alt="Portada del libro: una puerta azul en un muro blanco"
+        width="300"
+        height="420"
+        class="mx-auto h-auto w-56 rounded shadow"
+      />
+    </section>
+
+    <section>
+      <Titulo texto="Lo que publicamos" />
+      <ul class="grid gap-3 md:grid-cols-3">
+        {secciones.map((s) => (
+          <li class="rounded-lg border border-stone-300 bg-white p-4 text-center font-display text-lg">{s}</li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <Titulo texto="Nuestro primer libro" />
+      <ResumenLibro />
+    </section>
+
+    <section>
+      <Titulo texto="Su autora" />
+      <BloqueAutora />
+      <p class="mt-3"><a href={`${base}/sofia/`} class="underline" style="color:#9a3f1b">Más sobre Sofía</a></p>
+    </section>
+
+    <Aviso>Esta página no te pide ningún dato ni vende nada.</Aviso>
+  </main>
+  <Pie />
+</Base>

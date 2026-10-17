@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" width="300" height="420">
+  <rect width="300" height="420" fill="#f4ead9"/>
+  <rect x="0" y="260" width="300" height="160" fill="#d9c3a0"/>
+  <rect x="30" y="60" width="240" height="210" fill="#fffaf0" stroke="#c9b48f" stroke-width="3"/>
+  <path d="M110 270 V150 a40 40 0 0 1 80 0 V270 Z" fill="#2f5d8a"/>
+  <path d="M120 270 V152 a30 30 0 0 1 60 0 V270 Z" fill="#3f73a6"/>
+  <circle cx="172" cy="215" r="5" fill="#f4ead9"/>
+  <path d="M40 270 q10 -30 20 0 M232 270 q8 -22 16 0 M246 270 q6 -16 12 0" fill="none" stroke="#5b6b3a" stroke-width="3"/>
+  <text x="150" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="30" fill="#2b2118">La puerta azul</text>
+  <text x="150" y="362" text-anchor="middle" font-family="Georgia, serif" font-size="18" fill="#9a3f1b">Sofía</text>
+  <text x="150" y="398" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="#6b5a45">Ediciones del Patio</text>
+</svg>

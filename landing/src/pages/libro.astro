@@ -1,0 +1,43 @@
+---
+import Base from "../layouts/Base.astro";
+import Encabezado from "../components/Encabezado.astro";
+import Pie from "../components/Pie.astro";
+import Titulo from "../components/Titulo.astro";
+import Boton from "../components/Boton.astro";
+import ResumenLibro from "../components/ResumenLibro.astro";
+import { libro } from "../data/libro";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+<Base
+  titulo="La puerta azul | Ediciones del Patio"
+  descripcion="La puerta azul, el primer libro de Ediciones del Patio."
+>
+  <Encabezado />
+  <main class="mx-auto w-full max-w-4xl flex-1 space-y-8 px-4 py-8">
+    <h1 class="font-display text-4xl">La puerta azul</h1>
+    <ResumenLibro
+      grande
+      alt="Portada de La puerta azul: una puerta azul en un muro blanco"
+    />
+
+    <section>
+      <Titulo texto="De qué trata" />
+      {libro.sinopsis.map((p) => <p class="mb-3">{p}</p>)}
+    </section>
+
+    <section>
+      <Titulo texto="Los cinco capítulos" />
+      <ol class="list-decimal space-y-1 pl-6">
+        {libro.capitulos.map((c) => <li>{c}</li>)}
+      </ol>
+    </section>
+
+    <section>
+      <Titulo texto="Quién lo escribió" />
+      <p>Lo escribió Sofía. <a href={`${base}/sofia/`} class="underline" style="color:#9a3f1b">Conócela</a>.</p>
+    </section>
+
+    <Boton href={`${base}/`}>Volver al inicio</Boton>
+  </main>
+  <Pie />
+</Base>

@@ -1,0 +1,13 @@
+{
+  "session_id": "sesion-sintetica-17",
+  "transcript_path": "__RAIZ__/.transcripcion-sintetica.jsonl",
+  "cwd": "__RAIZ__",
+  "permission_mode": "acceptEdits",
+  "hook_event_name": "PreToolUse",
+  "tool_name": "Write",
+  "tool_input": {
+    "file_path": "__RAIZ__/manuscritos/fichas/ms-009.json",
+    "content": "{\n  \"id\": \"ms-009\",\n  \"titulo\": \"La Paciente\",\n  \"firma\": \"Eulalia Mendiburu\",\n  \"genero\": \"realismo\",\n  \"genero_detalle\": null,\n  \"resumen\": \"Clara hereda la balsa La Paciente y, en una crecida del río Tolmo, evacúa la isla.\",\n  \"premios\": {\n    \"texto\": \"Premio regional de cuento\",\n    \"anio\": 2019\n  },\n  \"editorial_previa\": null,\n  \"notas_del_autor\": null,\n  \"confianza\": \"alta\"\n}\n"
+  },
+  "tool_use_id": "toolu_sintetico_01"
+}

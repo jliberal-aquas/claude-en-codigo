@@ -1,0 +1,26 @@
+{
+  "_sintetico": true,
+  "model": "claude-opus-5-5",
+  "id": "msg_sintetico_004b",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "text",
+      "text": "Un cerrajero copia una llave antigua para una mujer misteriosa.\nUna etiqueta de 1989 sugiere que ella no ha envejecido.\nDonde faltaba el 14, la copia abre una puerta sin número.\nEl relato no explica la puerta ni la luz del interior.\nGénero probable: fantasía urbana."
+    }
+  ],
+  "stop_reason": "end_turn",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 412,
+    "output_tokens": 101
+  },
+  "_request_id": "req_sintetico_004b"
+}

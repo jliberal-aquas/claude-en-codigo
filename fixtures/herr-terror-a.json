@@ -1,0 +1,34 @@
+{
+  "_sintetico": true,
+  "model": "claude-opus-5-5",
+  "id": "msg_sintetico_terror_a",
+  "type": "message",
+  "role": "assistant",
+  "content": [
+    {
+      "type": "thinking",
+      "thinking": "",
+      "signature": "firma-sintetica"
+    },
+    {
+      "type": "text",
+      "text": "Lo busco en los manuscritos de la convocatoria."
+    },
+    {
+      "type": "tool_use",
+      "id": "toolu_sintetico_t1",
+      "name": "buscar_manuscrito",
+      "input": {
+        "texto": "terror"
+      }
+    }
+  ],
+  "stop_reason": "tool_use",
+  "stop_sequence": null,
+  "stop_details": null,
+  "usage": {
+    "input_tokens": 1342,
+    "output_tokens": 61
+  },
+  "_request_id": "req_sintetico_terror_a"
+}

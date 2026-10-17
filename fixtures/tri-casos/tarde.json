@@ -1,0 +1,21 @@
+{
+  "_sintetico": true,
+  "id": "tarde",
+  "manuscrito": "ms-006",
+  "autor": "Ximena Ferrabuz",
+  "recibido": "2026-09-12",
+  "mensaje": "Perdón por la demora: les envío «Estación Lenta». Espero que todavía estén a tiempo.",
+  "ficha": {
+    "id": "ms-006",
+    "titulo": "Estación Lenta",
+    "firma": "Ximena Ferrabuz",
+    "genero": "ciencia ficción",
+    "genero_detalle": null,
+    "resumen": "En una estación orbital de once personas, la inteligencia de mantenimiento cuenta doce corazones.",
+    "premios": null,
+    "editorial_previa": null,
+    "notas_del_autor": null,
+    "confianza": "alta"
+  },
+  "esperado": "rechazar"
+}

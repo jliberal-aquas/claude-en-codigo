@@ -1,0 +1,24 @@
+diff --git a/landing/pruebas/caracterizacion.test.ts b/landing/pruebas/caracterizacion.test.ts
+--- a/landing/pruebas/caracterizacion.test.ts
++++ b/landing/pruebas/caracterizacion.test.ts
+@@ -67,7 +67,7 @@
+       ...CABECERA,
+       // Arreglado a propósito (antes, "/libro …", sin camino base).
+       "/editorial-web/libro/ Conoce el primer libro",
+-      "/editorial-web/libro/ Leer el primer cuento",
++      "/editorial-web/libro/cuento/ Leer el primer cuento",
+       "/editorial-web/sofia/ Más sobre Sofía",
+     ],
+     alts: [
+diff --git a/landing/src/pages/index.astro b/landing/src/pages/index.astro
+--- a/landing/src/pages/index.astro
++++ b/landing/src/pages/index.astro
+@@ -24,7 +24,7 @@
+             >Conoce el primer libro</a
+           >
+         </p>
+-        <Boton href={`${base}/libro/`}>Leer el primer cuento</Boton>
++        <Boton href={`${base}/libro/cuento/`}>Leer el primer cuento</Boton>
+       </div>
+       <img
+         src={`${base}/portada-la-puerta-azul.svg`}
